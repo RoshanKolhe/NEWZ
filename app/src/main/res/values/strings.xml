@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">NEWZ</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="uemail">uemail</string>
+    <string name="upwd">upwd</string>
+    <string name="uniqueid">uniqueid</string>
+    <string name="timeLeft">timeleft</string>
+    <string name="taskflag5min">taskflag5min</string>
+    <string name="taskflag10min">taskflag10min</string>
+    <string name="taskflag15min">taskflag15min</string>
+    <string name="taskflag20min">taskflag20min</string>
+    <string name="isbookMark">isbookMark</string>
+
+    <string name="min5points">5</string>
+    <string name="min10points">10</string>
+    <string name="min15points">15</string>
+    <string name="min20points">20</string>
+    <string name="rewardCounter">rewardCounter</string>
+    <string name="todaysdate">todaysdate</string>
+
+
+    <string name="path_circle">
+    M 50,50
+    m -48,0
+    a 48,48 0 1,0 96,0
+    a 48,48 0 1,0 -96,0
+  </string>
+</resources>

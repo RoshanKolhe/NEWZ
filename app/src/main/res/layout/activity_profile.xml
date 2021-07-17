@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        app:cardCornerRadius="50dp"
+        android:layout_marginTop="-60dp"
+        app:cardBackgroundColor="@color/flat_blue">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:cardBackgroundColor="@color/white"
+                android:id="@+id/cv"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="100dp">
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/reader"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="Username"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/cv"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/ic_back_white"
+                android:padding="5dp" />
+
+            <Button
+                android:id="@+id/helpic"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_above="@id/cv"
+              android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="28dp"
+                android:background="@drawable/ic_help"
+                android:padding="5dp" />
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginHorizontal="45dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:text="Total Points Earned"/>
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/gray"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textStyle="bold"
+                android:text="0"/>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/email12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:padding="16dp"
+        android:editable="false"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/black"
+        android:background="@drawable/blue_orange_edittext"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_email"
+        android:textColorHint="@color/gray"
+        android:hint="Email" />
+
+    <TextView
+        android:id="@+id/phno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="16dp"
+        android:editable="false"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/black"
+        android:background="@drawable/blue_orange_edittext"
+        android:drawablePadding="5dp"
+        android:drawableStart="@drawable/ic_phno"
+        android:textColorHint="@color/gray"
+        android:hint="Phnno" />
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/gray"
+        android:textAlignment="center"
+        android:text="You Can Share This Application To Earn 30 Points"/>
+
+    <Button
+        android:id="@+id/refer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:layout_marginHorizontal="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_gradient_style"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto"
+        android:textSize="16sp"
+        android:text="Refer &amp; Earn" />
+
+
+
+        <Button
+            android:layout_marginTop="35dp"
+            android:layout_marginHorizontal="16dp"
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/orange"
+            android:background="@drawable/ripple_white_orange"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:text="Logout" />
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_gravity="center"
+        android:layout_height="2dp"
+        android:backgroundTint="@color/gray"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="15dp"
+        android:textSize="16dp"
+        android:textColor="@color/gray"
+        android:textStyle="bold"
+        android:text="For Any Queries or Feedback" />
+    <TextView
+        android:textAlignment="center"
+        android:id="@+id/contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="10dp"
+        android:textSize="14dp"
+        android:textColor="@color/flat_blue"
+        android:textStyle="bold"
+        android:text="Contact us" />
+</LinearLayout>
+</ScrollView>

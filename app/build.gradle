@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.Newz.newz"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 4
+        versionName '1.3'
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-analytics:18.0.2'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'fr.tvbarthel.blurdialogfragment:lib:2.2.0'
+    implementation 'com.facebook.shimmer:shimmer:0.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //firebase Dependancy
+    implementation 'androidx.browser:browser:1.3.0'
+    implementation 'com.google.firebase:firebase-auth:20.0.2'
+    implementation platform('com.google.firebase:firebase-bom:26.3.0')
+
+
+//    volley library
+    implementation 'com.android.volley:volley:1.1.1'
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.muddzdev:styleabletoast:2.2.4'
+
+
+    //admob Library
+    implementation 'com.google.android.gms:play-services-ads:19.7.0'
+    implementation 'com.github.daoibrahim:AdmobAdvancedNativeRecyclerview:1.0.0'
+
+    //phone number
+
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-identity:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.0'
+    implementation 'com.google.android.gms:play-services-base:17.6.0'
+
+    implementation "android.arch.lifecycle:extensions:1.1.1"
+    implementation 'com.zolad:zoominimageview:1.0.0'
+    implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+
+
+}

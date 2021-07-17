@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailsActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/detailLinear">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/linearDetails"
+        >
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <com.zolad.zoominimageview.ZoomInImageView
+            android:id="@+id/newsimg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="0dp"
+            android:padding="0dp"
+            android:scaleType="centerCrop"
+            android:transitionName="detailimg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="-16dp"
+            android:layout_marginRight="28dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                app:cardBackgroundColor="@color/gnt_white"
+                app:cardCornerRadius="100dp">
+
+                <ToggleButton
+                    android:id="@+id/bookmark"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_bookmark_ic"
+                    android:textOff=" "
+                    android:textOn=" " />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_gravity="right"
+                android:paddingHorizontal="5dp"
+                app:cardBackgroundColor="@color/gnt_white"
+                app:cardCornerRadius="100dp">
+
+                <Button
+                    android:id="@+id/share"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_share"
+                    android:gravity="center"
+                    android:paddingHorizontal="5dp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="26dp"
+            android:backgroundTint="@color/flat_blue"
+            android:clickable="true"
+            android:visibility="gone"
+            app:srcCompat="@drawable/time_animation" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp">
+
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto"
+                android:text="title"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_view_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="date"
+                android:textColor="@color/gray"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/text_view_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/roboto"
+                android:text="Description"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/oglink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:autoLink="web"
+                android:textAlignment="textEnd"
+                android:textStyle="bold"
+                android:layout_marginRight="5dp"
+                android:text="Show Original Article"
+                android:textColor="@color/flat_blue"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Tags : #finance #international"
+                android:textColor="@color/gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/credits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Credits : Mr.ABC article "
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-2184993334191556/2560852023">
+            </com.google.android.gms.ads.AdView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+</ScrollView>

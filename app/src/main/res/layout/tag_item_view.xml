@@ -1,0 +1,20 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    >
+
+    <Button
+        android:id="@+id/tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/btn_gradient_style"
+        android:paddingHorizontal="4dp"
+        android:paddingVertical="2dp"
+        android:text="#Tags"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</androidx.cardview.widget.CardView>

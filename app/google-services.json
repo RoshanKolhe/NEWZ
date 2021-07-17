@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1090024925591",
+    "project_id": "newz-console",
+    "storage_bucket": "newz-console.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1090024925591:android:4249ad61f30e362d17fcd2",
+        "android_client_info": {
+          "package_name": "com.Newz.newz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1090024925591-2hnnhc71enhgjj156sufv052g5kdkvvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKU2_NyuGqbgee5lIJctzoiwYUpknzKd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1090024925591-2hnnhc71enhgjj156sufv052g5kdkvvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

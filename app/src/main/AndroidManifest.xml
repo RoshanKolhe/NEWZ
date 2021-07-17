@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.Newz.newz">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+
+    <application
+        android:allowBackup="false"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NEWZ"
+        android:usesCleartextTraffic="true"
+        >
+        <activity android:name=".ContactUs" android:parentActivityName=".Home"></activity>
+        <activity android:name=".Walkthrough" />
+        <activity
+            android:name=".History"
+            android:parentActivityName=".Wallet" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-2184993334191556~7303054579" />
+
+        <activity android:name=".PasswordReset" />
+        <activity android:name=".ResetPassword" />
+        <activity
+            android:name=".Categories"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Bookmarks"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Tasks"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Wallet"
+            android:parentActivityName=".Home" />
+        <activity android:name=".Profile" />
+        <activity
+            android:name=".DetailsActivity"
+            android:parentActivityName=".Home" />
+        <activity
+            android:name=".Home"
+            android:parentActivityName=".Profile" />
+        <activity android:name=".Registration" />
+        <activity android:name=".Login" />
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <receiver android:name=".RemindNotification" />
+        <receiver android:name=".MorningNotification" />
+    </application>
+
+</manifest>

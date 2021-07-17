@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hcard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/coinslogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/coinslogo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/type"
+                android:layout_marginVertical="8dp"
+                android:layout_marginLeft="65dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="Type"
+                android:textColor="@color/flat_blue"
+                android:textStyle="bold"
+                android:layout_gravity="left"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_marginLeft="65dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="Points : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_weight="1"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/pointsEarned"
+                    android:layout_marginLeft="65dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text=".."
+                    android:layout_weight="1"
+                    android:textColor="@color/flat_blue"
+                    android:textStyle="bold"
+                    android:layout_gravity="right"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/date"
+               android:layout_marginLeft="65dp"
+                android:layout_marginBottom="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Date"
+                android:textColor="@color/gray"
+                android:layout_gravity="left"/>
+
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

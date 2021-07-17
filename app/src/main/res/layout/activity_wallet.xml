@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Wallet">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context=".Profile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-25dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/flat_blue"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="35dp"
+                        android:drawableStart="@drawable/ic_wallet"
+                        android:drawablePadding="5dp"
+                        android:paddingHorizontal="16dp"
+                        android:text="Total Reading Points : "
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="20dp"
+                        android:paddingHorizontal="16dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textSize="100sp" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="18dp"
+                        android:paddingHorizontal="16dp"
+                        android:text="Your Total Points Are Worth For"
+                        android:textColor="@color/white"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:paddingHorizontal="16dp"
+                        android:text="00"
+                        android:textColor="@color/white"
+                        android:textSize="23sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:paddingHorizontal="16dp"
+                android:text="Redeem Options :"
+                android:textColor="@color/gray"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingHorizontal="16dp">
+
+
+                <ImageView
+                    android:id="@+id/paytm"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/imgborder_selector"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/paytm" />
+
+                <ImageView
+                    android:id="@+id/phnpay"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/imgborder_selector"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/phnpay" />
+
+                <ImageView
+                    android:id="@+id/gpay"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/imgborder_selector"
+                    android:padding="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/googlepay" />
+
+
+            </LinearLayout>
+
+
+
+            <RadioGroup
+                android:id="@+id/limis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/redeem30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/orange"
+                    android:fontFamily="@font/roboto"
+                    android:text="Redeem 300 Points"
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:id="@+id/redeem60"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:buttonTint="@color/orange"
+                    android:fontFamily="@font/roboto"
+                    android:text="Redeem 600 Points"
+                    android:textColor="@color/black" />
+            </RadioGroup>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="30dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp">
+
+                <Button
+                    android:id="@+id/redeem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FF9C1A"
+                    android:fontFamily="@font/roboto"
+                    android:text="Redeem Now"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="5dp"
+                android:text="You Can Redeem Points only Twice a month i.e. on 14th &amp; 28th Date"
+                android:textColor="@color/gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/history"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/roboto"
+                android:text="Check Points History"
+                android:textColor="@color/flat_blue"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="10dp"
+                android:background="?android:attr/listDivider"
+                android:backgroundTint="@color/gray" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:paddingHorizontal="16dp"
+                android:text="NOTE : \n1) Transaction May Take 2-3 Working Days\n2) You Should Have Minimum of 300 Points To Redeem \n3) For Any Queries Contact us newz.console@gmail.com"
+                android:textColor="@color/gray"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
